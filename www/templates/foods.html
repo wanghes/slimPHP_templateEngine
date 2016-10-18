@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>foods List</h1>
+    {% if foods|length > 0 %}
+        {% for food in foods %}
+        <div class="media">
+              <a class="pull-left" href="/food/{{ food.id }}">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="{{ food.pic }}" style="width: 64px; height: 64px;">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">{{ food.title }}</h4>
+                {{ food.title }}{{ food.title }}
+              </div>
+            </div>
+
+            {% endfor %}
+
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "slim/slim": "*",
+         "slim/twig-view":"*",
+        "monolog/monolog": "^1.21"
+    }
+}
